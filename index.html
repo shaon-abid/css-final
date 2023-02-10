@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+font-family: cursive;
+  margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow:0 0 30px #d5d5d5;
+}
+
+li a {
+  display: block;
+  font-size: large;
+  font-weight: bold;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #e0c10c;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+.top-banner{
+    display: flex;
+ 
+}
+h1{
+    font-size: 50px;
+    display: inline;
+    border-bottom:2px solid #e0c10c;
+}
+h2 span{
+    color: orange;
+}
+img{
+    width: 100%;
+    height: auto;
+    transition: 2s;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.anchor-button{
+    text-decoration: none;
+    background: tomato;
+    padding: 10px  40px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+}
+p{
+    text-align: justify;
+}
+.port{
+    display: flex;
+}
+
+form{
+    background-color: #e0c10c;
+    padding: 15px;
+    border-radius: 5px 20px;
+}
+
+input,textarea {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;" id="home">
+    <section class="top-banner">
+        <div>
+            <h1>Welcome To</h1>
+            <h2><span>Shaon Abid's</span> World</h2>
+            <p>I am a Digital Marketer from Bangladesh. I love to get new experiences and always learn from my surroundings.</p>
+            <a class="anchor-button" target="_blank" href="http://shaonabid.com/">HIRE ME</a>
+        </div>
+        <div>
+            <img src="yourpic.png" alt="">
+        </div>
+    </section>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis enim harum doloremque aliquam eligendi! Eligendi error facilis et hic cum quas esse ducimus nam recusandae rem saepe corrupti repudiandae similique sed, eius modi qui repellendus sequi reiciendis aperiam enim! Obcaecati quos unde minus? Similique possimus commodi maiores consequatur exercitationem cupiditate nulla dicta earum iste eaque sed sapiente officia culpa deleniti excepturi impedit ab ratione cumque a dolor quisquam, quis asperiores? Doloribus dolorum quas facere rerum rem? Possimus laborum atque distinctio doloribus qui asperiores neque dolorem repellat enim alias debitis sed quia, iste quod nostrum consectetur architecto minima sit dolores molestias aspernatur earum necessitatibus, provident cumque. Explicabo deserunt nobis quidem ipsam aut fugiat ut facilis. Debitis assumenda quae quod rerum voluptates. Blanditiis, eligendi? Expedita ut perspiciatis reprehenderit molestiae eos quam voluptatum aperiam laudantium fugiat incidunt. Quibusdam quia sed corrupti alias sunt ipsa. Voluptatum quisquam numquam odio nam adipisci accusamus similique eum, earum esse eos repellat placeat quos aspernatur aliquid id illum error tenetur cumque. Nostrum beatae veritatis ducimus cumque maiores praesentium hic soluta ex nihil corporis aliquam perferendis asperiores nobis eius quod exercitationem harum voluptatum inventore, quisquam, doloribus sunt qui doloremque dolor incidunt? Sunt eaque quam obcaecati quos alias explicabo voluptatum suscipit nemo. Reiciendis obcaecati magni atque possimus suscipit reprehenderit aliquam debitis? Eveniet beatae perspiciatis asperiores quae magni repudiandae, earum sint eligendi corrupti accusantium rerum placeat dolorem, illo reprehenderit quos, sapiente ipsum molestiae consectetur dicta perferendis est neque ex maiores! Molestiae quod iste rerum laudantium quae assumenda aliquid iusto voluptatum ut!
+        </p>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1> <br> <br>
+        <form>
+            <label for="fname">First Name</label> <br>
+            <input type="text" id="fname" name="fname"> <br>
+            <label for="lname">Last Name</label> <br>
+            <input type="text" id="lname" name="lname"> <br>
+              <label for="email">Email</label> <br>
+            <input type="msg" id="lname" name="msg"> <br>
+            <label for="msg">Your Message</label> <br>
+            <textarea  rows="15" cols="10" placeholder="enter your message">
+                  </textarea>
+            <br>
+            <button class="anchor-button" type="Submit"> SEND ME</button>
+          
+          </form>
+    </section>
+    <footer>
+        Copyright &copy; 2022 Shaon Abid | Technical More, Mirpur road, Darussalam, Dhaka - 1216
+    </footer>
+</div>
+
+</body>
+</html>
+
+
